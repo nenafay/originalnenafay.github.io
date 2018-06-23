@@ -1,7 +1,32 @@
 *{
 	font-family: Verdana, Geneva, sans-serif;
-	background-color: #bbb;
-	padding: 4rem;
-	font-size: 16px;
-	line-height:1.618rem;
+	line-height:1.618em;
+	box-sizing: border-box;
+	padding: 0;
+	margin:0;
+	background-color: rgba(9,42,50,1.00);
 }
+
+h1, h2 {
+	font-family: "Palatino Linotype", Palatino, serif;
+	color:; 
+}
+
+html {
+	font-size: 16px;
+}
+
+header, main, footer {
+	margin: 0 auto;
+	max-width: 700px;
+}
+
+header h1 {
+	font-size: 3.236em;
+}
+
+header span #alterText {
+	font-size: 1.618em;
+	color:rgba(193,252,50,1.00);
+}
+
