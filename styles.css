@@ -1,32 +1,113 @@
 *{
-	font-family: Verdana, Geneva, sans-serif;
+	font-family: "Arial Narrow", sans-serif;
 	line-height:1.618em;
 	box-sizing: border-box;
 	padding: 0;
 	margin:0;
-	background-color: rgba(9,42,50,1.00);
+	color: white;
+}
+:root {
+	--navy: rgba(17, 40, 88, 0.9);
+	--coral:rgb(255, 93, 93);	
+	--contrastText:'Big Caslon', 'Book Antiqua', 'Palatino Linotype', Georgia, serif;
 }
 
-h1, h2 {
-	font-family: "Palatino Linotype", Palatino, serif;
-	color:; 
+body {
+	background-image: url(images/blue.ink.bkg.jpg);
+	background-repeat: no-repeat;
+	background-color: rgb(130, 143, 172);
+}
+
+h3 {
+	font-family: var(--contrastText);
+	color:var(--coral);
+	font-style: italic
 }
 
 html {
 	font-size: 16px;
 }
 
-header, main, footer {
-	margin: 0 auto;
-	max-width: 700px;
+
+.container{
+	width: 50%;
+	min-height: 20em;
+	margin: 0% 10% 20% 40%;
+	min-width: 650px;
+	background-color: var(--navy);
+	padding:2em;
+
+}
+
+header{
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	padding: 3rem;
+	grid-column-gap: 2rem;
+	grid-row-gap: 3rem;
 }
 
 header h1 {
-	font-size: 3.236em;
+	font-size: 4em;
+	text-align: left;
+	font-style: normal;
 }
 
-header span #alterText {
-	font-size: 1.618em;
-	color:rgba(193,252,50,1.00);
+.alterText {
+	color:var(--coral);
+	font-style: italic;
+	font-family: var(--contrastText);
+	text-align: right;
 }
+.name{
+	font-size: 2em;
+}
+
+section h2{
+	padding-top: 5em;
+	margin-top: -4em;
+}
+
+#projects {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+#projects > article{
+	display: block;
+}
+
+nav {
+	display: flex;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background:var(--navy);
+	width: 30%;
+	padding: 1rem 3rem;
+	border-bottom: 2px var(--navy);
+	text-align: center;
+
+}
+nav:hover {
+	border-bottom: 5px var(--coral);
+	transition: 3s;
+}
+
+a{
+	text-decoration:none;
+}
+
+nav a{
+	padding: 1rem;
+	text-emphasis: emphasis circle;
+}
+
+a:hover {
+	color: var(--coral);
+	transition: 3s;
+
+}
+
+
 
