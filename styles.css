@@ -31,9 +31,10 @@ html {
 
 .container{
 	width: 50%;
-	min-height: 20em;
-	margin: 0% 10% 20% 40%;
-	min-width: 650px;
+	height: 60vh;
+	max-height: 305em;
+	margin: 10% 5% 10% 45%;
+	min-width: 50vw;
 	background-color: var(--navy);
 	padding:2em;
 
@@ -42,13 +43,12 @@ html {
 header{
 	display: grid;
 	grid-template-columns: 3fr 1fr;
-	padding: 3rem;
 	grid-column-gap: 2rem;
 	grid-row-gap: 3rem;
 }
 
 header h1 {
-	font-size: 4em;
+	font-size: 3rem;
 	text-align: left;
 	font-style: normal;
 }
@@ -63,9 +63,9 @@ header h1 {
 	font-size: 2em;
 }
 
-section h2{
-	padding-top: 5em;
-	margin-top: -4em;
+section {
+	padding-top: 10rem;
+	margin-top: -10rem;
 }
 
 #projects {
@@ -73,9 +73,33 @@ section h2{
 	grid-template-columns: repeat(4, 1fr);
 }
 
-#projects > article{
-	display: block;
+#projects > article {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
 }
+
+#projects > article > * {
+	padding-top: 2rem;
+}
+
+#projects > img {
+object-fit:contain;
+}
+
+#button {
+	justify-content: flex-end;
+	margin: 1em 3em;
+	box-shadow: 2 5 10 var(--navy);
+	
+}
+
+#bio{
+	display:grid;
+	
+}
+
 
 nav {
 	display: flex;
@@ -83,7 +107,7 @@ nav {
 	top: 0;
 	left: 0;
 	background:var(--navy);
-	width: 30%;
+	width: 100%;
 	padding: 1rem 3rem;
 	border-bottom: 2px var(--navy);
 	text-align: center;
@@ -107,6 +131,10 @@ a:hover {
 	color: var(--coral);
 	transition: 3s;
 
+}
+#headShot {
+	max-height: 100px;
+	width: auto;
 }
 
 
