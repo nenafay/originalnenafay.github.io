@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie-edge">
+
 	<title>Nena By Design</title>
 
 	<link rel="stylesheet" type = "text/css" href="./styles.css">
@@ -25,27 +29,49 @@
 		<div class="container";>
 			<section id="projectScreen">
 				<h2>Projects</h2>
+				<p>Click an image to view details.</p>
 				<div id="projects">
 					<div id="thumbnail">
-						<img src=".images/sample" thumb-id="projectFortTell">
+						<img src=".images/fortune.png" article-id="projectFortTell">
 					</div>
 					<div id="thumbnail">
-						<img src=".images/sample" thumb-id="projectVirtPet">
+						<img src=".images/audrey.png" article-id="projectVirtPet">
 					</div>
 					<div>
-						<img src=".images/sample" thumb-id="projectVirtPetShelter">
+						<img src=".images/.shelter.png" article-id="projectVirtPetShelter">
 					</div>
 					<div>
-							<img src=".images/sample" thumb-id="projectReviews">
-					</div>
-					<div>
-							<img src=".images/sample" thumb-id="projectOrchardHill">
-					</div>
-					<div>
-							<img src=".images/sample" thumb-id="projectCreation">
+						<img src=".images/blueleaf.jpg" article-id="projectReviews">
 					</div>
 				</div>	
+				<aside>
+					<article id="projectFortTell">
+						<img src=".images/fortune.png">
+						<p>A Java project using Eclipse, Gitbash and GitHub to create a 
+							fortune-teller implementing while loops, if/else loops, and booleans.  </p>
+					</article>
+					<article id="projectVirtPet">
+						<img src=".images/audrey.png">
+						<p>A Java project using Eclipse, Test-driven development, 
+							Object-oriented programming, Gitbash and GitHub to 
+							create a virtual carnivorous plant implementing while 
+							loops, if/else loops, and booleans.  </p>
+					</article>
+					<article id="projectVirtPetShelter">
+						<img src=".images/shelter.png">
+						<p>A Java project using Eclipse, Test-driven development, 
+							Map and Collection functions and Object-oriented programming to 
+							create a shelter app for managing multiple virtual pets.  </p>
+					</article>
+					<article id="projectReviews">
+						<img src=".images/blueleaf.jpg">
+						<p>A web-based project bringing together Java collections and maps, 
+							along with Spring MVC, Bootstrap, HTML:5, and CSS3 to make 
+							one complete product.</p>
+					</article>
+				</aside>
 			</section>
+			<script src="./script.js"></script>
 		</div>
 		<div class="container">
 			<section id="bioScreen">
@@ -54,9 +80,13 @@
 					<article>
 						<img src="images/lowresheadshot.jpg" id="headShot">
 					</article>
-					<article>
+					<article id="blurb">
 						<h3> Just a note:</h3>
-						<p>Cras lacus mauris, maximus molestie nibh ac, finibus pharetra lacus. Nunc convallis consequat ex. Vivamus quis placerat purus. Integer quis nisi in metus luctus eleifend. Aliquam vel turpis pharetra lacus mollis blandit in ac ex. Maecenas congue eget eros mattis auctor. Nullam consequat molestie luctus. Aenean sed efficitur nisi. Sed ultrices urna at semper venenatis. Aliquam hendrerit, metus a accumsan tempor, nisi arcu feugiat lorem, et rhoncus metus nisl viverra ipsum. Morbi aliquet nulla ac lorem suscipit pharetra. Ut mattis ullamcorper lacus, ut placerat mi lacinia et.</p>
+						<p>Cras lacus mauris, maximus molestie nibh ac, finibus pharetra lacus. 
+							Nunc convallis consequat ex. Vivamus quis placerat purus. Integer quis 
+							nisi in metus luctus eleifend. Aliquam vel turpis pharetra lacus mollis 
+							blandit in ac ex. Maecenas congue eget eros mattis auctor. 
+						</p>
 					</article>
 					<article>
 						<h3>Contact Details</h3>
