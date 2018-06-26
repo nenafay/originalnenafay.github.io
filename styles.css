@@ -8,14 +8,16 @@
 }
 :root {
 	--navy: rgba(17, 40, 88, 0.9);
-	--turquoise:rgb(13, 237, 253);	
+	--turquoise:rgb(35, 167, 177);	
+	--periwinkle: rgb(130, 143, 172);
+	--transPeriwinkle: rgba(130, 143, 172, 0.5);
 	--contrastText:'Big Caslon', 'Book Antiqua', 'Palatino Linotype', Georgia, serif;
 }
 
 body {
 	background-image: url(images/blue.ink.bkg.jpg);
 	background-repeat: no-repeat;
-	background-color: rgb(130, 143, 172);
+	background-color: var(--periwinkle);
 }
 
 h3 {
@@ -71,17 +73,28 @@ section {
 
 #thumbnails {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(3, 1fr);
 	grid-row: 40%;
+	align-content: center;
+
 }
 
-#thumbnails > img {
-	padding: 1em;
-	width: 100%
+#thumbnails > div > img{
+	border: 5px solid var(--transPeriwinkle);
+	padding: 3px;
+	border-radius: 2em;
+	width: 150px;
+	height: 150px;	
+}
+
+#thumbnails > div > img:hover{
+	border: 5px solid var(--turquoise);
+	padding: 3px;
+	transition: 3s;
 }
 
 #projectScreen > aside {
-	background: #fff;
+	color: var(--navy);
 }
 
 #projectScreen > aside > article {
@@ -90,6 +103,27 @@ section {
 
 #projectScreen > aside >article.show {
 	display: flex;
+	position: fixed;
+	top:20%;
+	left: 5%;
+	max-width: 40%;
+	max-height: 305em;
+	align-items: vertical;
+}
+
+#projectScreen > aside > article.show > img {
+	max-width: 300px;
+	max-height: 300px;
+	border-bottom-left-radius: 2rem;
+	border-top-left-radius: 2rem;
+}
+
+#projectScreen > aside > article.show > p {
+	background-color: var(--transPeriwinkle);
+	padding: 2rem;
+	max-width: 250px;
+	border-bottom-right-radius: 2rem;
+	border-top-right-radius: 2rem;
 }
 
 #bio{
@@ -98,7 +132,6 @@ section {
 	grid-template-rows: 2 1fr;
 	padding: 1rem;
 	grid-column-gap: 2rem
-
 }
 
 #blurb {
@@ -126,14 +159,14 @@ nav {
 	background:var(--navy);
 	width: 100%;
 	padding: 1rem 3rem;
-	border-bottom: 2px var(--navy);
+	border-bottom: 5px solid transparent;
 	text-align: center;
 	border-bottom-left-radius: 2rem;
 	border-bottom-right-radius: 2rem;
-
 }
+
 nav:hover {
-	border-bottom: 5px turquoise);
+	border-bottom: 5px solid var(--turquoise);
 	transition: 3s;
 }
 
@@ -149,16 +182,25 @@ nav a:link {
 }
 
 a:hover {
-	color: turquoise);
+	color: var(--turquoise);
 	transition: 3s;
 	
 
 }
 #headShot {
-
 	padding: .75em 1em .75em 0em;
 	width: 100%;
 	border-radius: 2rem;
+}
+footer{
+	display: flex;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background:white;
+	width: 100%;
+	padding: 1rem 3rem;
+	color: var(--navy);
 }
 
 
