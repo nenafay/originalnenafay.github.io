@@ -8,7 +8,7 @@
 }
 :root {
 	--navy: rgba(17, 40, 88, 0.9);
-	--coral:rgb(255, 93, 93);	
+	--turquoise:rgb(13, 237, 253);	
 	--contrastText:'Big Caslon', 'Book Antiqua', 'Palatino Linotype', Georgia, serif;
 }
 
@@ -20,7 +20,7 @@ body {
 
 h3 {
 	font-family: var(--contrastText);
-	color:var(--coral);
+	color:var(--turquoise);
 	font-style: italic
 }
 
@@ -31,12 +31,13 @@ html {
 
 .container{
 	width: 50%;
-	height: 60vh;
+	min-height: 60vh;
 	max-height: 305em;
 	margin: 10% 5% 10% 45%;
 	min-width: 50vw;
 	background-color: var(--navy);
 	padding:2em;
+	border-radius: 2rem;
 
 }
 
@@ -54,7 +55,7 @@ header h1 {
 }
 
 .alterText {
-	color:var(--coral);
+	color:var(--turquoise);
 	font-style: italic;
 	font-family: var(--contrastText);
 	text-align: right;
@@ -68,15 +69,27 @@ section {
 	margin-top: -10rem;
 }
 
-#projects {
+#thumbnails {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-row: 40%;
 }
 
-#projects > img {
+#thumbnails > img {
 	padding: 1em;
 	width: 100%
+}
+
+#projectScreen > aside {
+	background: #fff;
+}
+
+#projectScreen > aside > article {
+	display: none;
+}
+
+#projectScreen > aside >article.show {
+	display: flex;
 }
 
 #bio{
@@ -93,6 +106,16 @@ section {
 	grid-column-end: 5;
 }
 
+#contact {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+#skills {
+	grid-column-start: 3;
+	grid-column-end:5;
+}
+
 
 
 nav {
@@ -105,10 +128,12 @@ nav {
 	padding: 1rem 3rem;
 	border-bottom: 2px var(--navy);
 	text-align: center;
+	border-bottom-left-radius: 2rem;
+	border-bottom-right-radius: 2rem;
 
 }
 nav:hover {
-	border-bottom: 5px var(--coral);
+	border-bottom: 5px turquoise);
 	transition: 3s;
 }
 
@@ -119,17 +144,21 @@ a{
 nav a{
 	margin: 1rem 5rem;
 }
+nav a:link {
+	transition-duration: 3s;
+}
 
 a:hover {
-	color: var(--coral);
+	color: turquoise);
 	transition: 3s;
-	border-bottom: 4px var(--coral)
+	
 
 }
 #headShot {
 
 	padding: .75em 1em .75em 0em;
 	width: 100%;
+	border-radius: 2rem;
 }
 
 

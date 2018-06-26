@@ -1,4 +1,4 @@
-const thumbs = document.querySelectorAll('#thumbnail > div');
+const thumbs = document.querySelectorAll('#thumbnails > div');
 
 for (let thumb of thumbs){
     thumb.onclick = function() {
@@ -10,5 +10,10 @@ for (let thumb of thumbs){
 }
 
 function hideArticles() {
-    const articles = document.querySelectorAll
+    const articles = document.querySelectorAll('#projectScreen aside article');
+    for (article of articles) {
+        article.classList.remove('show');
+    }
 }
+
+thumbs[0].classList.add('show');
