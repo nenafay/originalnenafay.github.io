@@ -6,6 +6,7 @@
 	margin:0;
 	color: white;
 }
+
 :root {
 	--navy: rgba(17, 40, 88, 0.9);
 	--turquoise:rgb(35, 167, 177);	
@@ -30,7 +31,6 @@ html {
 	font-size: 16px;
 }
 
-
 .container{
 	width: 50%;
 	min-height: 60vh;
@@ -40,7 +40,6 @@ html {
 	background-color: var(--navy);
 	padding:2em;
 	border-radius: 2rem;
-
 }
 
 header{
@@ -62,6 +61,7 @@ header h1 {
 	font-family: var(--contrastText);
 	text-align: right;
 }
+
 .name{
 	font-size: 2em;
 }
@@ -76,7 +76,6 @@ section {
 	grid-template-columns: repeat(3, 1fr);
 	grid-row: 40%;
 	align-content: center;
-
 }
 
 #thumbnails > div > img{
@@ -125,6 +124,7 @@ section {
 	border-bottom-right-radius: 2rem;
 	border-top-right-radius: 2rem;
 }
+
 #projectScreen > aside > article.show > p > a {
 	padding: 1em;
 	justify-content: center;
@@ -153,8 +153,6 @@ section {
 	grid-column-end:5;
 }
 
-
-
 nav {
 	display: flex;
 	position: fixed;
@@ -181,6 +179,7 @@ a{
 nav a{
 	margin: 1rem 5rem;
 }
+
 nav a:link {
 	transition-duration: 3s;
 }
@@ -196,6 +195,7 @@ a:hover {
 	width: 100%;
 	border-radius: 2rem;
 }
+
 footer{
 	display: flex;
 	position: fixed;
@@ -206,6 +206,3 @@ footer{
 	padding: 1rem 3rem;
 	color: var(--navy);
 }
-
-
-
