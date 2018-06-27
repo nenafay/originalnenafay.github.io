@@ -125,6 +125,10 @@ section {
 	border-bottom-right-radius: 2rem;
 	border-top-right-radius: 2rem;
 }
+#projectScreen > aside > article.show > p > a {
+	padding: 1em;
+	justify-content: center;
+}
 
 #bio{
 	display:grid;
