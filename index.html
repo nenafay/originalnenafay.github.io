@@ -20,49 +20,35 @@
 			</header>
 		</section>
 	</div>
-	<nav>
-		<a href="#projectScreen">Projects</a>
-		<a href="#bioScreen">Bio</a>
-		<a href="#home">Home</a>
+
+	<nav id = "topNav">
+		<div id="navButton">Navigation</div>
+		<div id = "dropdown">
+			<a href="#projectScreen">Projects</a>
+			<a href="#bioScreen">Bio</a>
+			<a href="#home">Home</a>
+		</div>
 	</nav>
 	<main>
 		<div class="container";>
 			<section id="projectScreen">
 				<h2>Projects</h2>
-				<p>Click an image to view details.</p>
-				<div id="thumbnails">
-					<div article-id="projectFortTell">
-						<img src="./images/fortune.png">
-					</div>
-					<div article-id="projectVirtPet">
-						<img src="./images/audrey.png">
-					</div>
-					<div article-id="projectVirtPetShelter">
-						<img src="./images/shelter.png">
-					</div>
-					<div article-id="projectReviews">
-						<img src="./images/blueleaf.jpg">
-					</div>
-					<div article-id="projectReviews">
-						<img src="./images/blueleaf.jpg">
-					</div>
-					<div article-id="projectReviews">
-						<img src="./images/blueleaf.jpg">
-					</div>
-					<div article-id="empty">
-						<a href="#empty">Clear</a>
-					</div>
-				</div>	
+				<div class = carousel>
+					<div class = "prev"></div>
+					<div class = "next"></div>
+					<div class = "view"></div>
+					<div class = "imgs"></div>
+				</div>
+				<div class = "asideButton">Show project details:
+				</div>
 				<aside>
 					<article id="projectFortTell">
-						<img src="./images/fortune.png">
 						<p>A Java project using Eclipse, Gitbash and GitHub to create a 
 							fortune-teller implementing while loops, if/else loops, and booleans. 
 							<a href="https://github.com/nenafay/FortuneTeller">See it</a>
 						</p>
 					</article>
 					<article id="projectVirtPet">
-						<img src="./images/audrey.png">
 						<p>A Java project using Eclipse, Test-driven development, 
 							Object-oriented programming, to 
 							create a virtual carnivorous plant implementing multiple loops and booleans.  
@@ -70,7 +56,6 @@
 						</p>
 					</article>
 					<article id="projectVirtPetShelter">
-						<img src="./images/shelter.png">
 						<p>A Java project using Eclipse, Test-driven development, 
 							Map and Collection functions and Object-oriented programming to 
 							create a shelter app for managing multiple virtual pets. 
@@ -78,7 +63,6 @@
 						</p>
 					</article>
 					<article id="projectReviews">
-						<img src="./images/blueleaf.jpg">
 						<p>A web-based project bringing together Java collections and maps, 
 							along with Spring MVC, Bootstrap, HTML:5, and CSS3 to make 
 							one complete product.
@@ -96,12 +80,6 @@
 				<div id="bio">
 					<article>
 						<img src="./images/lowresheadshot.jpg" id="headShot">
-					</article>
-					<article id="blurb">
-						<h3> Just a note:</h3>
-						<p>I'm a Creative Professional with a strong Design and Education background. Throughout my career, I've also done a lot of project management, data collection and analysis, planning, designing, conflict management, educational scaffolding, and problem solving. 
-						Recently, I've joined We Can Code IT to update my tech skills, broaden my horizons, and expand into the tech industry. I'm really excited to see what happens next! 
-						</p>
 					</article>
 					<article id= "contact">
 						<h3>Contact Details</h3>
@@ -129,6 +107,16 @@
 							<li>Agile Methodology</li>
 						</ul>
 					</article>
+				</div>
+				<div id="bioModal" class="modal">
+					<div class="modalContent">
+						<span class="close">&times;</span>
+						<img src="./images/lowresheadshot.jpg" id="headShotModal">
+						<h3> Just a note:</h3>
+						<p>I'm a Creative Professional with a strong Design and Education background. Throughout my career, I've also done a lot of project management, data collection and analysis, planning, designing, conflict management, educational scaffolding, and problem solving. 
+						Recently, I've joined We Can Code IT to update my tech skills, broaden my horizons, and expand into the tech industry. I'm really excited to see what happens next! 
+						</p>
+					</div>
 				</div>	
 			</section>
 		</div>
