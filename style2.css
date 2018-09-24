@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+    font-family: serif;
+    padding:0;
+    margin:0;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+:root{
+    --contrastText: 'Life Savers', cursive;
+    --paleCyan: rgb(185, 238, 252);
+    --paleBlue: rgb(201, 211, 252);
+    --paleLavender: rgb(228, 210, 252);
+    --navy: rgb(15, 40, 90);
+}
+
+#background{
+    display: grid;
+    grid-template-columns: 100px 50px 50px 100px;
+    grid-template-rows: 100px 50px 50px 100px;
+    grid-gap: 2px var(--paleCyan);
+    border: 2px solid var(--paleCyan);
+}
