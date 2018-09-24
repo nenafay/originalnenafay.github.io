@@ -22,3 +22,7 @@
     grid-gap: 2px var(--paleCyan);
     border: 2px solid var(--paleCyan);
 }
+
+#tile.div:hover {
+
+}
