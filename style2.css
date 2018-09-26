@@ -15,14 +15,95 @@
     --navy: rgb(15, 40, 90);
 }
 
+/*background pattern*/
+
 #background{
     display: grid;
-    grid-template-columns: 100px 50px 50px 100px;
-    grid-template-rows: 100px 50px 50px 100px;
+    grid-template-columns: 50px 25px 25px 50px;
+    grid-template-rows: 50px 25px 25px 50px;
     grid-gap: 2px var(--paleCyan);
     border: 2px solid var(--paleCyan);
 }
 
-#tile.div:hover {
+#a, #d, #m, #p{
+    width: 25;
+    height: 25;
 
+    background-color: var(--paleCyan);
 }
+
+#b{
+    width: 0;
+    height: 0;
+
+    
+    border-top: transparent;
+    border-bottom: var(--paleLavender) 25px;
+    
+    border-left: var(--paleLavender) 13px;
+    border-right: transparent;
+}
+
+#c{
+    width: 0;
+    height: 0;
+
+    border-top: transparent;
+    border-bottom: var(--paleLavender) 25px;
+    
+    border-left: transparent;
+    border-right: var(--paleLavender) 13px;
+}
+
+#e{
+    width: 0;
+    height: 0;
+
+    border-top: var(--paleLavender) 13px;
+    border-bottom: transparent;
+    
+    border-left: transparent;
+    border-right: var(--paleLavender) 25px;
+}
+
+#f, #g, #j, #k{
+    width: 25px;
+    height: 25px;
+
+    background-color: var(--paleLavender);
+}
+
+#h{
+    width: 0;
+    height: 0;
+
+    border-top: var(--paleLavender) 13px;
+    border-bottom: transparent;
+    
+    border-left: var(--paleLavender) 25px;
+    border-right: transparent;
+}
+
+#i{
+    width: 0;
+    height: 0;
+
+    border-bottom: var(--paleLavender) 13px;
+    border-top: transparent;
+    
+    border-right: var(--paleLavender) 25px;
+    border-left: transparent;
+}
+
+#l{
+    width: 0;
+    height: 0;
+
+    border-bottom: var(--paleLavender) 13px;
+    border-top: transparent;
+    
+    border-left: var(--paleLavender) 25px;
+    border-right: transparent;
+}
+
+
