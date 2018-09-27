@@ -9,15 +9,15 @@
 
 :root{
     --contrastText: 'Life Savers', cursive;
-    --paleCyan: rgb(185, 238, 252);
-    --paleBlue: rgb(201, 211, 252);
-    --paleLavender: rgb(228, 210, 252);
+    --paleCyan: rgb(142, 218, 240);
+    --paleBlue: rgb(158, 174, 236);
+    --paleLavender: rgb(198, 171, 233);
     --navy: rgb(15, 40, 90);
 }
 
 /*background pattern*/
 
-#background{
+#tile{
     display: grid;
     grid-template-columns: 50px 25px 25px 50px;
     grid-template-rows: 50px 25px 25px 50px;
@@ -104,6 +104,28 @@
     
     border-left: var(--paleLavender) 25px;
     border-right: transparent;
+}
+
+#n{
+    width: 0;
+    height: 0;
+
+    border-bottom: transparent;
+    border-top: var(--paleLavender) 25px;
+    
+    border-right: transparent;
+    border-left: var(--paleLavender) 13px;
+}
+
+#o{
+    width: 0;
+    height: 0;
+
+    border-bottom: transparent;
+    border-top: var(--paleLavender) 25px;
+    
+    border-left: transparent;
+    border-right: var(--paleLavender) 13px;
 }
 
 
