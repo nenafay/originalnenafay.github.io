@@ -17,7 +17,9 @@
 /*background pattern*/
 body{
     background: repeat linear-gradient(var(--navy) 0px, var(--navy) 50px,
-    var(--paleCyan) 50px, var(--paleCyan) 52px);
+    var(--paleCyan) 50px, var(--paleCyan) 52px, 
+    var(--navy) 52px, var(--navy) 62px, 
+    var(--paleCyan) 62px, var(--paleCyan) 64px);
 }
 
 header{
