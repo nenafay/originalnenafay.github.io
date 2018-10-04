@@ -16,10 +16,10 @@
 
 /*background pattern*/
 body{
-    background: repeat linear-gradient(var(--navy) 0px, var(--navy) 50px,
+    background: repeating-linear-gradient(var(--navy) 0px, var(--navy) 50px,
     var(--paleCyan) 50px, var(--paleCyan) 52px, 
-    var(--navy) 52px, var(--navy) 62px, 
-    var(--paleCyan) 62px, var(--paleCyan) 64px);
+    var(--navy) 52px, var(--navy) 102px, 
+    var(--paleCyan) 102px, var(--paleCyan) 104px);
 }
 
 header{
