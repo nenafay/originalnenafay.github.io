@@ -1,32 +1,3 @@
-*{
-    box-sizing: border-box;
-    font-family: serif;
-    padding:0;
-    margin:0;
-    font-family: 'Josefin Sans', sans-serif;
-    color: white;
-
-}
-
-:root{
-    --contrastText: 'Life Savers', cursive;
-    --paleCyan: rgb(142, 218, 240);
-    --paleBlue: rgb(158, 174, 236);
-    --navy: rgb(15, 40, 90);
-}
-
-/*background pattern*/
-body{
-    background: repeating-linear-gradient(var(--navy) 0px, var(--navy) 50px,
-    var(--paleCyan) 50px, var(--paleCyan) 52px, 
-    var(--navy) 52px, var(--navy) 102px, 
-    var(--paleCyan) 102px, var(--paleCyan) 104px);
-}
-
-header{
-    background: url(header.svg) no-repeat top left;
-    background-size: contain;
-}
 
 
 
