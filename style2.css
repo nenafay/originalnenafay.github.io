@@ -27,7 +27,7 @@ header{
     width: 100%;
     padding: 10px;
     background-color: white;
-    color: var(--navy);
+    color: var(--turquoise);
     justify-items: center;
 }
 
@@ -37,14 +37,115 @@ header{
 }
 
 #navButton {
-    display: grid;
-    grid-template-rows: 3 1fr;
-    grid-row-gap: 4px;
+    display: inline-block;
+    cursor: pointer;
 }
 
 #navButton div {
-    background-color: var(--turquoise);
-    height: 3px;
+   width: 35px;
+   height: 5px;
+   border-radius: 2px;
+   background-color:var(--turquoise);
+   margin: 6px 0;
+   transition: 0.4s;
 }
+
+.change #bar1 {
+    transform: rotate(-45deg);
+}
+
+.change #bar2{
+    opacity: 0;
+}
+
+
+
+/* .lines-button {
+    padding: 2rem 1rem;
+    transition: .3s;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 0.57143rem;
+  
+  }
+  .lines-button:hover {
+    opacity: 1;
+  }
+  .lines-button:active {
+    transition: 0;
+  }
+  
+  .lines {
+    display: inline-block;
+    width: 4rem;
+    height: 0.57143rem;
+    background: #ecf0f1;
+    border-radius: 0.28571rem;
+    transition: 0.3s;
+    position: relative;
+  }
+  .lines:before, .lines:after {
+    display: inline-block;
+    width: 4rem;
+    height: 0.57143rem;
+    background: #ecf0f1;
+    border-radius: 0.28571rem;
+    transition: 0.3s;
+    position: absolute;
+    left: 0;
+    content: '';
+    -webkit-transform-origin: 0.28571rem center;
+    transform-origin: 0.28571rem center;
+  }
+  .lines:before {
+    top: 1rem;
+  }
+  .lines:after {
+    top: -1rem;
+  }
+  
+  .lines-button:hover .lines:before {
+    top: 1.14286rem;
+  }
+  .lines-button:hover .lines:after {
+    top: -1.14286rem;
+  }
+  
+  .lines-button.open {
+    -webkit-transform: scale3d(0.8, 0.8, 0.8);
+    transform: scale3d(0.8, 0.8, 0.8);
+  }
+.lines-button.x2 .lines {
+    transition: background 0.3s 0.5s ease;
+  }
+  .lines-button.x2 .lines:before, .lines-button.x2 .lines:after {
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    transition: top 0.3s 0.6s ease, -webkit-transform 0.3s ease;
+    transition: top 0.3s 0.6s ease, transform 0.3s ease;
+  }
+  
+  .lines-button.x2.open .lines {
+    transition: background 0.3s 0s ease;
+    background: transparent;
+  }
+  .lines-button.x2.open .lines:before, .lines-button.x2.open .lines:after {
+    transition: top 0.3s ease, -webkit-transform 0.3s 0.5s ease;
+    transition: top 0.3s ease, transform 0.3s 0.5s ease;
+    top: 0;
+    width: 4rem;
+  }
+  .lines-button.x2.open .lines:before {
+    -webkit-transform: rotate3d(0, 0, 1, 45deg);
+    transform: rotate3d(0, 0, 1, 45deg);
+  }
+  .lines-button.x2.open .lines:after {
+    -webkit-transform: rotate3d(0, 0, 1, -45deg);
+    transform: rotate3d(0, 0, 1, -45deg);
+  } */
+
+
+
+
 
 
