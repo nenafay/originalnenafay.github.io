@@ -38,26 +38,46 @@ header{
 
 #navButton {
     display: inline-block;
+    grid-template-columns: 1fr 1fr;
     cursor: pointer;
+    margin-top: 3px;
+    
 }
 
 #navButton div {
-   width: 35px;
-   height: 5px;
-   border-radius: 2px;
+   width: 15px;
+   height: 1px;
    background-color:var(--turquoise);
-   margin: 6px 0;
-   transition: 0.4s;
+   margin: 3px 0;
+   transition: 0.8s;
+}
+
+#navButton div:hover{
+    background-color: var(--navy);
 }
 
 .change #bar1 {
-    transform: rotate(-45deg);
+    transform: rotate(45deg) translate(5px, 5px);
 }
 
 .change #bar2{
-    opacity: 0;
+    transform: rotate(45deg) translate(3px, 2px);
+}
+.change #bar3{
+    transform: rotate(-45deg) translate(0px, 0px);
 }
 
+.change #bar4{
+    transform: rotate(-45deg) translate(4px, -3px); 
+}
+
+#dropdown{
+    display: none;
+}
+
+.change #dropdown{
+    display: inline-block;
+}
 
 
 /* .lines-button {

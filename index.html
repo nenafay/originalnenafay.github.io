@@ -13,12 +13,13 @@
 	<header>
 		<nav id = "topNav">
 			<div id="welcome">Welcome to my GitHub Portfolio</div>
-			<div id="navButton" onclick="xFunction(this)" onmouseover="growFunction(this)">
+			<div id="navButton" onclick="navFunction(this)">
 				<div id="bar1"></div>
 				<div id="bar2"></div>
 				<div id="bar3"></div>
+				<div id="bar4"></div>
 			</div>				
-			<div id = "dropdown">
+			<div id = "dropdown" onchange="dropFunction(this)">
 				<a href="#projectScreen">Projects</a>
 				<a href="#bioScreen">Bio</a>
 				<a href="#home">Home</a>
