@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie-edge">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Life+Savers" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Jacques+Francois+Shadow|Montserrat&display=swap" rel="stylesheet">
 	<title>Nena Park</title>   
@@ -11,23 +12,23 @@
 </head>
 <body>
 	<header>
-		<div id="welcome">Welcome to my GitHub Portfolio</div>	
-		<nav id="topNav">
-			<div class="navlinks">
-				<a href="#home">Home</a>
-				<div class="dropdown">
-					<button class="dropbtn">Projects
-						<i class="fa fa-caret-down"></i>
-					</button>
-						<a href="#games">Fun & Games</a>
-	  					<a href="#edu">Educational</a>
-						<a href="#soc">Social</a>
-						<a href="#pretty">Experimental</a>
-					</div>
-				<a href="#bioScreen">Bio</a>
-				<a href="#new">New</a>
+		<div class="welcome">Welcome to my GitHub Portfolio</div>	
+		<nav class="topNav" id="myTopNav">
+			<a href="#home">Home</a>
+			<div class="dropdown">
+				<button class="dropbtn">Projects
+					<i class="fa fa-angle-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="#games">Fun & Games</a>
+					<a href="#edu">Educational</a>
+					<a href="#soc">Social</a>
+					<a href="#pretty">Experimental</a>
+				</div>
 			</div>
-			<div id="navButton" onclick="navFunction(this)">
+			<a href="#bioScreen">Bio</a>
+			<a href="#new">New</a>	
+			<div class="navButton" id="myNavBtn" onclick="navbtnFunction(this)" onclick="respNavFunction()">
 				<div id="bar1"></div>
 				<div id="bar2"></div>
 				<div id="bar3"></div>
