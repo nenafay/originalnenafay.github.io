@@ -11,22 +11,29 @@
 </head>
 <body>
 	<header>
-		<nav id = "topNav">
-			<div id="welcome">Welcome to my GitHub Portfolio</div>
+		<div id="welcome">Welcome to my GitHub Portfolio</div>	
+		<nav id="topNav">
+			<div class="navlinks">
+				<a href="#home">Home</a>
+				<div class="dropdown">
+					<button class="dropbtn">Projects
+						<i class="fa fa-caret-down"></i>
+					</button>
+						<a href="#games">Fun & Games</a>
+	  					<a href="#edu">Educational</a>
+						<a href="#soc">Social</a>
+						<a href="#pretty">Experimental</a>
+					</div>
+				<a href="#bioScreen">Bio</a>
+				<a href="#new">New</a>
+			</div>
 			<div id="navButton" onclick="navFunction(this)">
 				<div id="bar1"></div>
 				<div id="bar2"></div>
 				<div id="bar3"></div>
 				<div id="bar4"></div>
-			</div>				
-			<div id = "dropdown" onchange="dropFunction(this)">
-				<a href="#projectScreen">Projects</a>
-				<a href="#bioScreen">Bio</a>
-				<a href="#home">Home</a>
 			</div>
-		</nav>
-
-	
+		</nav>	
 	</header>
 
 	<main>
